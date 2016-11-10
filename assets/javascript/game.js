@@ -1,35 +1,49 @@
 document.addEventListener('DOMContentLoaded', () => {
-	let characterArray, 
-		defeatedCharactersArray, 
-		selectedCharacter,
-		selectedOpponent;
+	// let characterArray;
+	let currentGame;
 
 	function characterPrototype (name, healthPoints, attackPower, counterAttackPower) {
 		this.name = name;
 		this.healthPoints = healthPoints;
 		this.attackPower = attackPower;
 		this.counterAttackPower = counterAttackPower;
+		this.defeated = false;
 	}
+
+	function gamePrototype (characterArray) {
+		this.characters = characterArray;
+		this.selectedCharacter = null;
+		this.selectedOpponent = null;
+		this.victories = 0;
+	}
+
 
 	const initializeStartingArray = () => {
-		let characterArray = [];
-		let defeatedCharactersArray = [];
-		let test = new characterPrototype("test", 100, 50, 60);
-		characterArray.push(test);
-		let test2 = new characterPrototype("test2", 100, 50, 60);
-		characterArray.push(test2);
+		characterArray = [
+			new characterPrototype("Fighter1", 100, 50, 60),
+			new characterPrototype("Fighter2", 100, 50, 60),
+			new characterPrototype("Fighter3", 100, 50, 60)
+		];
+		return characterArray;
+
 	}
 
-	
+	const startGame = (characterArray) => {
+		currentGame = new gamePrototype(characterArray);
+		console.log(currentGame);
+	}
+
+
 
 	
 	const init = () => {
-		initializeStartingArray();
+		let characterArray = initializeStartingArray();
 		console.log(characterArray);
 		var result = characterArray.filter((object) => {
-			return object.name == "test";
+			return object.name === "test";
 		});
-		console.log(result);
+		
+		startGame(characterArray);
 	}
 
 	init();
