@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		this.attackPower = attackPower;
 		this.counterAttackPower = counterAttackPower;
 		this.defeated = false;
+		
 	}
 
 	function gamePrototype (characterArray) {
@@ -20,9 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const initializeStartingArray = () => {
 		characterArray = [
-			new characterPrototype("Fighter1", 100, 50, 60),
-			new characterPrototype("Fighter2", 100, 50, 60),
-			new characterPrototype("Fighter3", 100, 50, 60)
+			new characterPrototype("Fighter1", 100, 50, 60, false),
+			new characterPrototype("Fighter2", 100, 50, 60, false),
+			new characterPrototype("Fighter3", 100, 50, 60, false)
 		];
 		return characterArray;
 
@@ -31,6 +32,18 @@ document.addEventListener('DOMContentLoaded', () => {
 	const startGame = (characterArray) => {
 		currentGame = new gamePrototype(characterArray);
 		console.log(currentGame);
+		selectFighter()
+	}
+
+
+
+	const selectFighter = () => {
+
+
+	}
+
+	const selectedOpponent = () => {
+
 	}
 
 

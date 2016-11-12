@@ -1,0 +1,73 @@
+body {
+	font-family: 'Lato', sans-serif;
+	background: black;
+	background-image: url('https://virginiaburges.files.wordpress.com/2015/07/canaletto-warwick-castle-from-river-avon-c-1749.jpg');
+  	background-repeat: no-repeat;
+  	background-size: 100%;
+  	background-attachment: fixed;
+  	background-position: 0% 100%;
+  	display: flex;
+  	flex-direction: column;
+   	min-height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.panel {
+	border-radius: 0;
+	background-color: rgba(255,255,255,0.8);
+	/*background-image: url('../images/paper.png');*/
+	-webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 60%, 0 100%, 0 0, 0 0);
+	/*clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 60%, 0 100%, 0 0, 0 0);*/
+}
+
+.panel-heading {
+	/*background-color: rgba(0,0,0,0.5) !important;*/
+	background-color: tan !important;
+	background: none;
+	color: white !important;
+}
+
+* {
+	box-sizing: border-box;
+/*	color: white;
+*/	transition: 0.3s;
+}
+
+.h1 {
+	font-family: 'Tangerine', cursive;
+	font-size: 100px;
+	color: tan;
+	line-height: 1;
+}
+.h1::first-letter {
+	/*background: red;*/
+	/*font-size: larger;*/
+}
+
+img {
+	filter: grayscale(0.8);
+	transition: 0.5s;
+	-webkit-clip-path: polygon(50% 0, 100% 0, 100% 91%, 50% 50%, 0 91%, 0 0, 0 0);
+	/*clip-path: polygon(51% 0, 100% 0, 100% 100%, 52% 61%, 0 100%, 0 0, 0 0);*/
+}
+
+img:hover {
+	filter: grayscale(0);
+	transition: 0.5s;
+
+	-webkit-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+
+
+
+
+}
+
+.headerBlock {
+	background-image: linear-gradient(to right, transparent, rgba(0,0,0,0.4), transparent);
+	border-bottom: solid 1px white;
+	padding-top: 2px;
+	margin-bottom: 6px;
+
+}
