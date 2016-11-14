@@ -4,6 +4,7 @@
 	<title>Ye Olde Jousting</title>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,39 +19,17 @@
 			</header>
 		</div>
 		<div class="row">
-			<section>
-				<div class="col-md-3">
-					<div class="panel panel-default">
-	  					<div class="panel-heading text-center">Fighter 2</div>
-	  					<div class="panel-body">
-	  						<img class="img-responsive" src="https://s-media-cache-ak0.pinimg.com/originals/6d/46/b3/6d46b304fd3deb8a16f53a926661a4a2.jpg">
-	  					</div>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="panel panel-default">
-	  					<div class="panel-heading text-center">Fighter 2</div>
-	  					<div class="panel-body">
-	  						<img class="img-responsive" src="https://s-media-cache-ak0.pinimg.com/originals/6d/46/b3/6d46b304fd3deb8a16f53a926661a4a2.jpg">
-	  					</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="panel panel-default">
-	  					<div class="panel-heading text-center">Fighter 3</div>
-	  					<div class="panel-body">
-	  						<img class="img-responsive" src="https://thumbs.dreamstime.com/x/jousting-knight-15038880.jpg">
-	  					</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="panel panel-default">
-	  					<div class="panel-heading text-center">Fighter 4</div>
-	  					<div class="panel-body"><img class="img-responsive" src="http://www.knightsofmiddleengland.com/_gallery-image.aspx?ID=831"></div>
-					</div>
-				</div>
+			<h3 class="h3 text-center" id="actionMessage">Select Your Fighter</h3>
+		</div>
+		<div class="row">
+			<section id="fighters">
 			</section>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+			<section id="opponents" class="center-block">
+			</section>
+			</div>
 		</div>
 	</div>
 
